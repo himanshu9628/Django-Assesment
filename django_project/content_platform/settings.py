@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'channels',
     'posts',
-    'collections',
+    'content_collections',
 ]
 
 MIDDLEWARE = [

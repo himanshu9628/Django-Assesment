@@ -6,7 +6,8 @@ from datetime import datetime, timedelta
 import os
 from dotenv import load_dotenv
 
-from models import User, UserCreate, UserLogin, TokenResponse
+from models import UserCreate, UserLogin, TokenResponse
+from database import get_db, engine, Base, User
 from auth_utils import (
     create_access_token, 
     verify_token, 
@@ -14,7 +15,6 @@ from auth_utils import (
     verify_password,
     get_google_user_info
 )
-from database import get_db, engine, Base
 
 load_dotenv()
 
